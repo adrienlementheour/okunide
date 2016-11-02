@@ -12,6 +12,7 @@ var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var imagemin = require('gulp-imagemin');
 var htmlmin = require('gulp-htmlmin');
+var projectPath = 'dest/wp-content/themes/okunide';
 
 var report_error = function(error) {
     $.notify({
@@ -44,33 +45,33 @@ gulp.task('styles', function () {
             ]
         }))
         .pipe($.sourcemaps.write())
-        .pipe(gulp.dest('dest/css'))
+        .pipe(gulp.dest(projectPath+'/css'))
         .pipe($.size({title: 'styles'}));
 });
 
 gulp.task('bower', function() {
     return gulp.src('src/js/libs/**/*')
-        .pipe(gulp.dest('dest/js/libs'))
+        .pipe(gulp.dest(projectPath+'/js/libs'))
         .pipe($.size({ title: 'bower' }));
 });
 
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('dest/fonts'))
+        .pipe(gulp.dest(projectPath+'/fonts'))
         .pipe($.size({ title: 'fonts' }));
 });
 
 gulp.task('img', function() {
     return gulp.src('src/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dest/img'))
+        .pipe(gulp.dest(projectPath+'/img'))
         .pipe($.size({ title: 'img' }));
 });
 
 gulp.task('layoutImg', function() {
     return gulp.src('src/layoutImg/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dest/layoutImg'))
+        .pipe(gulp.dest(projectPath+'/layoutImg'))
         .pipe($.size({ title: 'layoutImg' }));
 });
 
@@ -79,7 +80,7 @@ gulp.task('js', function () {
         .pipe(source('main.js'))
         .pipe(buffer())
         .pipe(uglify())
-        .pipe(gulp.dest('dest/js'));
+        .pipe(gulp.dest(projectPath+'/js'));
 });
 
 gulp.task('templates', function() {
@@ -90,7 +91,19 @@ gulp.task('templates', function() {
     
         // .pipe($.prettify({ indent_size: 4 }))
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('dest'))
+        .pipe(gulp.dest(projectPath+'/templates'))
+        .pipe($.size({title: 'template'}));
+});
+
+gulp.task('theme', function() {
+    
+        return gulp.src('src/teme/*.php.twig')
+            .pipe($.twig())
+            .pipe($.extReplace('.php', '.php.php'))
+    
+        // .pipe($.prettify({ indent_size: 4 }))
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(projectPath))
         .pipe($.size({title: 'template'}));
 });
 
@@ -122,7 +135,7 @@ gulp.task('watch', function () {
 
     var fileWatcher = watch('src/**/*').on('unlink', function(currentPath){
         var filePathFromSrc = path.relative(path.resolve('src'), currentPath);
-        var destFilePath = path.resolve('dest', filePathFromSrc).replace('templates/', '');
+        var destFilePath = path.resolve(projectPath, filePathFromSrc).replace('templates/', '');
         del.sync(destFilePath);
         console.log('File removed - ' + destFilePath);
     });
