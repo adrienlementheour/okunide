@@ -97,14 +97,23 @@ gulp.task('templates', function() {
 
 gulp.task('theme', function() {
     
-        return gulp.src('src/teme/*.php.twig')
+        return gulp.src('src/theme/*.php.twig')
             .pipe($.twig())
             .pipe($.extReplace('.php', '.php.php'))
     
         // .pipe($.prettify({ indent_size: 4 }))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(projectPath))
-        .pipe($.size({title: 'template'}));
+        .pipe($.size({title: 'theme'}));
+});
+
+gulp.task('themePhp', function() {
+    
+        return gulp.src('src/theme/*.php')    
+        // .pipe($.prettify({ indent_size: 4 }))
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(projectPath))
+        .pipe($.size({title: 'themePhp'}));
 });
 
 
@@ -119,6 +128,9 @@ gulp.task('watch', function () {
     });
     watch('src/templates/**/*', function(){
         gulp.start(['templates'], reload);
+    });
+    watch('src/theme/**/*', function(){
+        gulp.start(['theme', 'themePhp'], reload);
     });
     watch('src/fonts/**/*', function(){
         gulp.start(['fonts'], reload);
@@ -141,4 +153,4 @@ gulp.task('watch', function () {
     });
 });
 
-gulp.task('start', ['styles', 'templates', 'fonts', 'img', 'layoutImg', 'js', 'bower']);
+gulp.task('start', ['styles', 'templates', 'theme', 'themePhp', 'fonts', 'img', 'layoutImg', 'js', 'bower']);
