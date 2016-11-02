@@ -1,4 +1,4 @@
-	<footer role="contentinfo">
+	<footer role='contentinfo'>
 	</footer>
 
 	<?php wp_footer(); ?>
