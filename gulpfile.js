@@ -120,7 +120,7 @@ gulp.task('themePhp', function() {
 gulp.task('watch', function () {
     browserSync({
         notify: false,
-        server: ['dest']
+        proxy: 'localhost'
     });
 
     watch('src/scss/**/*', function(){
