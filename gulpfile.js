@@ -102,7 +102,6 @@ gulp.task('theme', function() {
             .pipe($.extReplace('.php', '.php.php'))
     
         // .pipe($.prettify({ indent_size: 4 }))
-        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(projectPath))
         .pipe($.size({title: 'theme'}));
 });
@@ -111,7 +110,6 @@ gulp.task('themePhp', function() {
     
         return gulp.src('src/theme/*.php')    
         // .pipe($.prettify({ indent_size: 4 }))
-        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(projectPath))
         .pipe($.size({title: 'themePhp'}));
 });
