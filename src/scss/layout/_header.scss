@@ -1,1 +1,18 @@
 /* Header */
+
+#header{
+	padding: 21px 0 17px;
+}
+
+#logo{
+	display: inline-block;
+	height: 42px;
+	text-indent: -99em;
+	overflow: hidden;
+	img{
+		display: block;
+	}
+	span{
+		position: absolute;
+	}
+}

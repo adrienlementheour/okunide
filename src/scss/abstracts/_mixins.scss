@@ -61,7 +61,17 @@
 }
 
 // Fonts
-// @mixin font($size){
-//     font-family: $font;
-//     font-size: $size;
-// }
+@mixin lato($size){
+    font-family: $lato;
+    font-size: $size;
+}
+
+@mixin lato-bold($size){
+    font-family: $latobold;
+    font-size: $size;
+}
+
+@mixin lato-italic($size){
+    font-family: $latoitalic;
+    font-size: $size;
+}

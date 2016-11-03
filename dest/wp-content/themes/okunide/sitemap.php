@@ -2,7 +2,23 @@
 /*
 Template Name: Sitemap
 */
-get_header(); ?> <div class="container"> <?php if ( have_posts() ) : ?> <?php while ( have_posts() ) : the_post(); ?> <h1><?php the_title(); ?></h1> <?php the_content(); ?> <h2>Pages</h2><ul> <?php wp_list_pages( array('post_type' => 'page', 'title_li' => '', 'sort_column' => 'post_title') ); ?> </ul> <?php
+get_header(); ?>
+
+	<div class='container'>
+
+		<?php if ( have_posts() ) : ?>
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+
+				<h2>Pages</h2>
+				<ul>
+					<?php wp_list_pages( array('post_type' => 'page', 'title_li' => '', 'sort_column' => 'post_title') ); ?>
+				</ul>
+
+				<?php
 					function listPosts($postType, $tax){
 						$options = $tax ? array( array('taxonomy' => 'types', 'field' => 'slug', 'terms' => $tax) ) : '';
 						$posts = get_posts( array('post_type' => $postType, 'orderby' => 'title', 'posts_per_page' => -1, 'order' => 'ASC', 'tax_query' => $options) );
@@ -22,4 +38,19 @@ get_header(); ?> <div class="container"> <?php if ( have_posts() ) : ?> <?php wh
 
 						echo $output;
 					}
-				?> <h2>Blog posts</h2> <?php listPosts('post', ''); ?> <?php endwhile; ?> <?php else : ?> <?php echo '404'; ?> <?php endif; ?> </div> <?php get_footer(); ?>
+				?>
+
+				<h2>Blog posts</h2>
+				<?php listPosts('post', ''); ?>
+
+			<?php endwhile; ?>
+
+		<?php else : ?>
+
+			<?php echo '404'; ?>
+
+		<?php endif; ?>
+
+	</div>
+
+<?php get_footer(); ?>
