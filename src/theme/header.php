@@ -49,7 +49,7 @@
 					<form id='form-header'>
 						<fieldset class='search-group'>
 							<input class='search-input' type='text' name='search' placeholder='J’ai déjà ma petite idée...'>
-							<button></button>
+							<button class='btn-search'><svg class='icon'><use xlink:href='#icon-search'/></svg></button>
 						</fieldset>
 					</form>
 					<a href='#'>Bookmarks</a>
