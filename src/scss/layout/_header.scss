@@ -1,12 +1,14 @@
 /* Header */
 
 #header{
-	padding: 21px 0 17px;
+	padding: 20px 0 16px;
 }
 
 #logo{
 	display: inline-block;
+	vertical-align: middle;
 	height: 42px;
+	margin: 0 70px 0 0;
 	text-indent: -99em;
 	overflow: hidden;
 	img{
@@ -15,4 +17,9 @@
 	span{
 		position: absolute;
 	}
+}
+
+#form-header{
+	display: inline-block;
+	vertical-align: middle;
 }

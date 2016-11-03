@@ -8,7 +8,9 @@
 }
 
 fieldset{
-
+  &.search-group{
+    border-bottom: 1px solid $light-grey;
+  }
 }
 
 input, textarea, select, button{
@@ -25,11 +27,17 @@ input, textarea{
 }
 
 input{
+    border: none;
+    color: $dark-blue;
     // hide the symbols of input search
     &[type=search]{
         &::-webkit-search-cancel-button, &::-webkit-search-decoration{
             display: none;
         }
+    }
+    &.search-input{
+      font-size: 1.5rem;
+      padding: 4px 100px 4px 0;
     }
 }
 
