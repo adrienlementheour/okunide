@@ -6,25 +6,13 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	#logo{
+		margin: 0 70px 0 0;
+	}
 }
 
 #header-right{
 	padding-top: 12px;
-}
-
-#logo{
-	display: inline-block;
-	vertical-align: middle;
-	height: 42px;
-	margin: 0 70px 0 0;
-	text-indent: -99em;
-	overflow: hidden;
-	img{
-		display: block;
-	}
-	span{
-		position: absolute;
-	}
 }
 
 #form-header{

@@ -28,8 +28,12 @@ input, textarea{
 }
 
 input{
-    border: none;
+    border: 1px solid $dark-blue;
+    border-radius: 3px;
+    padding: 18px;
     color: $dark-blue;
+    font-family: $lato;
+    font-size: 1.6rem;
     // hide the symbols of input search
     &[type=search]{
         &::-webkit-search-cancel-button, &::-webkit-search-decoration{
@@ -39,6 +43,7 @@ input{
     &.search-input{
       font-size: 1.5rem;
       padding: 4px 100px 4px 0;
+      border: none;
     }
 }
 
@@ -51,6 +56,13 @@ select{
 
 button{
   border: none;
+  font-family: $latobold;
+  font-size: 1.6rem;
+  background: $yellow;
+  border: 1px solid $yellow;
+  color: $white;
+  padding: 18px;
+  border-radius: 3px;
   &.btn-search{
     display: block;
     width: 14px;
@@ -59,10 +71,28 @@ button{
     top: 50%;
     right: 0;
     margin-top: -7px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: $dark-blue;
     .icon{
       display: block;
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+#newsletter{
+  input, button{
+    display: inline-block;
+    vertical-align: top;
+  }
+  input{
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+  }
+  button{
+    border-radius: 0 3px 3px 0;
   }
 }
