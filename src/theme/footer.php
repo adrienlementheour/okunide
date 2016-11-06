@@ -2,6 +2,26 @@
 		<div id='footer-partners'>
 			<div class='container'>
 				<h2 class='big'>Nos partenaires</h2>
+				<ul class='partners'>
+					<li>
+						<a href='#' title='Stark'><span>Stark</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-stark.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-stark.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-stark@2x.png 2x' alt='Stark'></a>
+					</li>
+					<li>
+						<a href='#' title='Ross'><span>Ross</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-ross.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-ross.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-ross@2x.png 2x' alt='Ross'></a>
+					</li>
+					<li>
+						<a href='#' title='5c5'><span>5c5</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-5c5.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-5c5.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-5c5@2x.png 2x' alt='5c5'></a>
+					</li>
+					<li>
+						<a href='#' title='AA13'><span>AA13</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-aa13.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-aa13.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-aa13@2x.png 2x' alt='AA13'></a>
+					</li>
+					<li>
+						<a href='#' title='Maison & Objet Paris'><span>Maison &amp; Objet Paris</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-maison-et-objet.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-maison-et-objet.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-maison-et-objet@2x.png 2x' alt='Maison & Objet Paris'></a>
+					</li>
+					<li>
+						<a href='#' title='Urquiola'><span>Urquiola</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo-urquiola.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo-urquiola.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo-urquiola@2x.png 2x' alt='Urquiola'></a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div id='footer-menu'>
