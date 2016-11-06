@@ -2,6 +2,14 @@
 
 #header{
 	padding: 20px 0 16px;
+	.container{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+#header-right{
+	padding-top: 12px;
 }
 
 #logo{

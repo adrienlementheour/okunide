@@ -24,7 +24,7 @@
 					<path d='M11.219 7.615c-0.257-0.257-0.385-0.573-0.385-0.948 0-0.382 0.127-0.7 0.38-0.953s0.571-0.38 0.953-0.38c0.375 0 0.691 0.128 0.948 0.385l9.333 9.333c0.257 0.257 0.385 0.573 0.385 0.948s-0.128 0.691-0.385 0.948l-9.333 9.333c-0.257 0.257-0.573 0.385-0.948 0.385-0.382 0-0.7-0.127-0.953-0.38s-0.38-0.571-0.38-0.953c0-0.375 0.129-0.691 0.385-0.948l8.385-8.385-8.385-8.385z'></path>
 				</symbol>
 				<symbol id='icon-heart' viewBox='0 0 32 32'>
-					<title>heart</title>
+					<title>Bookmarks</title>
 					<path d='M23.542 2.667q2.177 0 4.016 1.073t2.912 2.912 1.073 4.016q0 1.563-0.599 3.036t-1.745 2.62l-13.198 13.198-13.198-13.198q-1.146-1.146-1.745-2.62t-0.599-3.037q0-2.177 1.073-4.016t2.912-2.911 4.016-1.073q1.573 0 3.037 0.594t2.62 1.75l1.885 1.885 1.885-1.885q1.146-1.146 2.62-1.745t3.037-0.599zM23.542 5.333q-1.042 0-2.021 0.396t-1.75 1.167l-3.771 3.771-3.771-3.771q-0.771-0.771-1.75-1.167t-2.021-0.396q-1.458 0-2.682 0.713t-1.938 1.938-0.713 2.682q0 1.042 0.396 2.021t1.167 1.75l11.313 11.313 11.313-11.313q0.771-0.771 1.167-1.75t0.396-2.021q0-1.458-0.713-2.682t-1.938-1.938-2.682-0.713z'></path>
 				</symbol>
 				<symbol id='icon-cross' viewBox='0 0 32 32'>
@@ -32,7 +32,7 @@
 					<path d='M25.333 5.333q0.573 0 0.953 0.38t0.38 0.953q0 0.563-0.385 0.948l-8.396 8.385 8.396 8.385q0.385 0.385 0.385 0.948 0 0.573-0.38 0.953t-0.953 0.38q-0.563 0-0.948-0.385l-8.385-8.396-8.385 8.396q-0.385 0.385-0.948 0.385-0.573 0-0.953-0.38t-0.38-0.953q0-0.563 0.385-0.948l8.396-8.385-8.396-8.385q-0.385-0.385-0.385-0.948 0-0.573 0.38-0.953t0.953-0.38q0.563 0 0.948 0.385l8.385 8.396 8.385-8.396q0.385-0.385 0.948-0.385z'></path>
 				</symbol>
 				<symbol id='icon-search' viewBox='0 0 32 32'>
-					<title>search</title>
+					<title>Search</title>
 					<path d='M13.333 1.333q2.438 0 4.661 0.953t3.828 2.557 2.557 3.828 0.953 4.662q0 2.094-0.682 4.010t-1.943 3.479l7.573 7.563q0.385 0.385 0.385 0.948 0 0.573-0.38 0.953t-0.953 0.38q-0.563 0-0.948-0.385l-7.563-7.573q-1.563 1.26-3.479 1.943t-4.010 0.682q-2.438 0-4.662-0.953t-3.828-2.557-2.557-3.828-0.953-4.662 0.953-4.662 2.557-3.828 3.828-2.557 4.662-0.953zM13.333 4q-1.896 0-3.625 0.74t-2.979 1.99-1.99 2.979-0.74 3.625 0.74 3.625 1.99 2.979 2.979 1.99 3.625 0.74 3.625-0.74 2.979-1.99 1.99-2.979 0.74-3.625-0.74-3.625-1.99-2.979-2.979-1.99-3.625-0.74z'></path>
 				</symbol>
 				<symbol id='icon-Filter' viewBox='0 0 32 32'>
@@ -43,16 +43,17 @@
 		</svg>
 		<header role='banner' id='header'>
 			<div class='container large'>
-				<nav role='navigation'>
-					<a id='logo' href='<?php echo home_url( '/' ); ?>' title='Okunidé' rel='home'><span>Okunidé</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo@2x.png 2x' alt='Okunidé'></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					<form id='form-header'>
-						<fieldset class='search-group'>
-							<input class='search-input' type='text' name='search' placeholder='J’ai déjà ma petite idée...'>
-							<button class='btn-search'><svg class='icon'><use xlink:href='#icon-search'/></svg></button>
-						</fieldset>
-					</form>
-					<a href='#'>Bookmarks</a>
-				</nav>
+			<div id='header-left'>
+				<a id='logo' href='<?php echo home_url( '/' ); ?>' title='Okunidé' rel='home'><span>Okunidé</span><img src='<?php echo get_template_directory_uri(); ?>/img/logo.png' srcset='<?php echo get_template_directory_uri(); ?>/img/logo.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo@2x.png 2x' alt='Okunidé'></a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<form id='form-header'>
+					<fieldset class='search-group'>
+						<input class='search-input' type='text' name='search' placeholder='J’ai déjà ma petite idée...'>
+						<button class='btn-search'><svg class='icon'><use xlink:href='#icon-search'/></svg></button>
+					</fieldset>
+				</form>
+			</div><div id='header-right'>
+				<a href='#' class='btn-bookmarks'><svg class='icon'><use xlink:href='#icon-heart'/></svg></a>
+			</div>
 			</div>
 		</header>

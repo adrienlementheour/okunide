@@ -1,1 +1,12 @@
 /* Buttons */
+
+.btn-bookmarks{
+	display: block;
+	width: 22px;
+	height: 19px;
+	.icon{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
