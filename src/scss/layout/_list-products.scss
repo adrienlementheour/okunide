@@ -1,0 +1,20 @@
+/* List products */
+
+.wrapper-products{
+	background: $dark-blue;
+}
+
+.list-products{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 20px 0;
+	> li{
+		padding: 10px 0;
+		width: calc(25% - 10px);
+		&.large{
+			width: calc(50% - 20px);
+		}
+	}
+}

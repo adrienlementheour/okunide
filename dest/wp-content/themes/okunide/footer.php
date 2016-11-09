@@ -31,7 +31,7 @@
 					<form id='newsletter'>
 						<fieldset>
 							<input type='email' name='search' placeholder='Votre adresse email...'><!--
-							--><button>S'inscrire</button>
+							--><button class='btn'>S'inscrire</button>
 						</fieldset>
 					</form>
 				</div>
