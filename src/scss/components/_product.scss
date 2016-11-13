@@ -1,6 +1,7 @@
 /* Product */
 
 $transition-product: 0.3s ease-out;
+$transition-price-duration: 0.15s;
 
 .product{
 	height: 440px;
@@ -25,7 +26,7 @@ $transition-product: 0.3s ease-out;
 		.product-price{
 			opacity: 1;
 			transform: translate3d(0, 0, 0);
-			transition-delay: 0.3s;
+			transition-delay: $transition-price-duration;
 		}
 		.arrow-product{
 			opacity: 0;
@@ -116,7 +117,7 @@ $transition-product: 0.3s ease-out;
 
 	opacity: 0;
 	transform: translate3d(-20px, 0, 0);
-	transition: $transition-product;
+	transition: $transition-price-duration ease-out;
 	transition-delay: 0;
 }
 
@@ -128,6 +129,6 @@ $transition-product: 0.3s ease-out;
 	right: 28px;
 	margin-top: -10px;
 
-	transition: $transition-product;
-	transition-delay: 0.2s;
+	transition: $transition-price-duration ease-out;
+	transition-delay: $transition-price-duration;
 }
