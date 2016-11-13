@@ -81,11 +81,11 @@ $transition-price-duration: 0.15s;
 }
 .desc-product{
 	display: flex;
+	height: 74px;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
 	padding: 18px 28px;
-	//padding: 18px;
 	background: $light-blue;
 	&:before{
 		content: '';
@@ -103,18 +103,23 @@ $transition-price-duration: 0.15s;
 }
 .name-shop{
 	position: relative;
+	width: 75%;
 }
 .product-name{
 	font-family: $latobold;
 	font-size: 1.6rem;
+	max-width: 100%;
+	@include ellipsis;
 }
 .product-shop{
 	font-family: $lato;
 	font-size: 1.6rem;
+	max-width: 100%;
+	@include ellipsis;
 }
 .product-price{
 	position: relative;
-
+	
 	opacity: 0;
 	transform: translate3d(-20px, 0, 0);
 	transition: $transition-price-duration ease-out;

@@ -1,12 +1,28 @@
 /* Pagination */
 
 .wrapper-pagination{
-  padding: 34px 0;
+  position: relative;
+  padding: 28px 0;
   background: $white;
   border-bottom: 4px solid $dark-blue;
+  &:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% + 33px);
+    position: absolute;
+    top: -33px;
+    left: 0;
+    background: url('../layoutImg/pagination-gift.png') no-repeat -5px 0;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+      background-image: url('../layoutImg/pagination-gift@2x.png');
+      background-size: 110px 113px;
+    }
+  }
   .container{
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
 }
 

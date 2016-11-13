@@ -32,7 +32,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
@@ -54,7 +54,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
@@ -76,7 +76,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
@@ -98,7 +98,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
@@ -120,7 +120,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
@@ -142,7 +142,7 @@
 							</div>
 						</div>
 						<div class='product-price'>
-							595,00 €
+							595&nbsp;€
 						</div>
 						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
 					</div>
