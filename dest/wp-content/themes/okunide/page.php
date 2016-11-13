@@ -25,10 +25,32 @@
 					<div class='desc-product'>
 						<div class='name-shop'>
 							<div class='product-name'>
-								Lampadaire Faces		
+								Soso Wall Clock		
 							</div>
 							<div class='product-shop'>
-								Colonel
+								Lemnos
+							</div>
+						</div>
+						<div class='product-price'>
+							595,00 €
+						</div>
+						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
+					</div>
+				</li>
+				<li class='product'>
+					<div class='img-product'>
+						<img src='<?php echo get_template_directory_uri(); ?>/img/horloge.png'>
+						<div class='btn-product'>
+							<a href='#' class='btn btn-invert'>Aller sur le site marchand</a>
+						</div>
+					</div>
+					<div class='desc-product'>
+						<div class='name-shop'>
+							<div class='product-name'>
+								Soso Wall Clock		
+							</div>
+							<div class='product-shop'>
+								Lemnos
 							</div>
 						</div>
 						<div class='product-price'>
@@ -47,10 +69,32 @@
 					<div class='desc-product'>
 						<div class='name-shop'>
 							<div class='product-name'>
-								Lampadaire Faces		
+								Soso Wall Clock		
 							</div>
 							<div class='product-shop'>
-								Colonel
+								Lemnos
+							</div>
+						</div>
+						<div class='product-price'>
+							595,00 €
+						</div>
+						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
+					</div>
+				</li>
+				<li class='product'>
+					<div class='img-product'>
+						<img src='<?php echo get_template_directory_uri(); ?>/img/horloge.png'>
+						<div class='btn-product'>
+							<a href='#' class='btn btn-invert'>Aller sur le site marchand</a>
+						</div>
+					</div>
+					<div class='desc-product'>
+						<div class='name-shop'>
+							<div class='product-name'>
+								Soso Wall Clock		
+							</div>
+							<div class='product-shop'>
+								Lemnos
 							</div>
 						</div>
 						<div class='product-price'>
@@ -69,54 +113,10 @@
 					<div class='desc-product'>
 						<div class='name-shop'>
 							<div class='product-name'>
-								Lampadaire Faces		
+								Soso Wall Clock		
 							</div>
 							<div class='product-shop'>
-								Colonel
-							</div>
-						</div>
-						<div class='product-price'>
-							595,00 €
-						</div>
-						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
-					</div>
-				</li>
-				<li class='product'>
-					<div class='img-product'>
-						<img src='<?php echo get_template_directory_uri(); ?>/img/horloge.png'>
-						<div class='btn-product'>
-							<a href='#' class='btn btn-invert'>Voir la fiche produit</a>
-						</div>
-					</div>
-					<div class='desc-product'>
-						<div class='name-shop'>
-							<div class='product-name'>
-								Lampadaire Faces		
-							</div>
-							<div class='product-shop'>
-								Colonel
-							</div>
-						</div>
-						<div class='product-price'>
-							595,00 €
-						</div>
-						<svg class='icon arrow-product'><use xlink:href='#icon-arrow-right'/></svg>
-					</div>
-				</li>
-				<li class='product'>
-					<div class='img-product'>
-						<img src='<?php echo get_template_directory_uri(); ?>/img/horloge.png'>
-						<div class='btn-product'>
-							<a href='#' class='btn btn-invert'>Voir la fiche produit</a>
-						</div>
-					</div>
-					<div class='desc-product'>
-						<div class='name-shop'>
-							<div class='product-name'>
-								Lampadaire Faces		
-							</div>
-							<div class='product-shop'>
-								Colonel
+								Lemnos
 							</div>
 						</div>
 						<div class='product-price'>
@@ -129,16 +129,16 @@
 					<div class='img-product'>
 						<img src='<?php echo get_template_directory_uri(); ?>/img/horloge.png'>
 						<div class='btn-product'>
-							<a href='#' class='btn btn-invert'>Voir la fiche produit</a>
+							<a href='#' class='btn btn-invert'>Aller sur le site marchand</a>
 						</div>
 					</div>
 					<div class='desc-product'>
 						<div class='name-shop'>
 							<div class='product-name'>
-								Lampadaire Faces		
+								Soso Wall Clock		
 							</div>
 							<div class='product-shop'>
-								Colonel
+								Lemnos
 							</div>
 						</div>
 						<div class='product-price'>
