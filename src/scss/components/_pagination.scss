@@ -1,0 +1,41 @@
+/* Pagination */
+
+.wrapper-pagination{
+  padding: 34px 0;
+  background: $white;
+  border-bottom: 4px solid $dark-blue;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.pagination{
+  margin: 0;
+  padding: 0;
+  > li{
+    display: inline-block;
+    vertical-align: baseline;
+    &:first-child, &:last-child{
+      a{
+        margin: 0;
+      }
+    }
+    &.active{
+      a{
+        opacity: 1;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  a{
+    margin: 0 8px;
+    font-family: $lato;
+    font-size: 1.6rem;
+    opacity: 0.5;
+  }
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+}

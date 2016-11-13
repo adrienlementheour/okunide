@@ -149,6 +149,23 @@
 				</li>
 			</ul>
 		</div>
+		<div class='wrapper-pagination'>
+			<div class='container'>
+				<ul class='pagination'>
+					<li class='active'>
+						<a href='#'><svg><use xlink:href='#icon-arrow-left'/></svg></a>
+					</li><li>
+						<a href='#'>1</a>
+					</li><li class='active'>
+						<a href='#'>2</a>
+					</li><li>
+						<a href='#'>3</a>
+					</li><li class='active'>
+						<a href='#'><svg><use xlink:href='#icon-arrow-right'/></svg></a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 <?php get_footer(); ?>
