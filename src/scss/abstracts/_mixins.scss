@@ -65,13 +65,19 @@
     font-family: $lato;
     font-size: $size;
 }
-
 @mixin lato-bold($size){
     font-family: $latobold;
     font-size: $size;
 }
-
 @mixin lato-italic($size){
     font-family: $latoitalic;
+    font-size: $size;
+}
+@mixin montserrat($size){
+    font-family: $montserrat;
+    font-size: $size;
+}
+@mixin montserrat-bold($size){
+    font-family: $montserratbold;
     font-size: $size;
 }

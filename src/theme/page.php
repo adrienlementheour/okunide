@@ -11,6 +11,12 @@
 
 		<?php endif; ?>
 	</div>
+
+	<div class='bloc-top'>
+		<div class='container'>
+			<h1>Vous cherchez un cadeau original&nbsp;? Vous n’avez okunidé&nbsp;!</h1>
+		</div>
+	</div>
 	
 	<div class='wrapper-products'>
 		<div class='container'>
