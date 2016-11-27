@@ -12,9 +12,35 @@
 		<?php endif; ?>
 	</div>
 
-	<div class='bloc-top'>
+	<div id='bloc-top'>
 		<div class='container'>
-			<h1>Vous cherchez un cadeau original&nbsp;? Vous n’avez okunidé&nbsp;!</h1>
+			<h1>Vous cherchez un cadeau original&nbsp;? Vous <s class='color-black'>n</s>’avez <span class='color-black'>okunidé</span>&nbsp;!</h1>
+			<div class='bloc-search'>
+				<form class='form-search'>
+					<fieldset>
+						<input type='radio' name='gender' value='homme' checked>Homme
+						<input type='radio' name='gender' value='femme'>Femme
+					</fieldset>
+					<fieldset>
+						<select name='select'>
+						  <option value='value1'>Valeur 1</option> 
+						  <option value='value2' selected>Valeur 2</option>
+						  <option value='value3'>Valeur 3</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<select name='select'>
+						  <option value='value1'>Valeur 1</option> 
+						  <option value='value2' selected>Valeur 2</option>
+						  <option value='value3'>Valeur 3</option>
+						</select>
+					</fieldset>
+					<a href='#'>Plus de critères</a>
+					<fieldset>
+						<button class='btn'>C'est parti</button>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 	</div>
 	

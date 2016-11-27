@@ -21,12 +21,14 @@
     'layout/forms',
     'layout/header',
     'layout/footer',
-    'layout/list-products';
+    'layout/list-products',
+    'layout/bloc-top';
 
 @import
     'components/buttons',
     'components/product',
-    'components/pagination';
+    'components/pagination',
+    'components/bloc-search';
 
 @import
     'pages/home';
